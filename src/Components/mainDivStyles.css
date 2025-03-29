@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto; /* Ensures sticky works correctly */
+    background-color: #f8f9fa; /* Optional background */
+}
+.mainDiv {
+    position: fixed;
+    display: flex;
+    background-image: url('../assets/background.jpg');
+    background-size: cover;
+    background-attachment: fixed    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form {
+    height: auto;
+    width: 450px;
+    
+    backdrop-filter: blur(10px);
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown-toggle {
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border: none !important;
+}
+
+.dropdown-menu {
+    color: white;
+    width: 200px;
+    background-color: rgba(255, 255, 255);
+    max-height: 600px;
+    overflow-y: auto;
+    max-width: 300px;
+}
+
+.dropdown-item {
+    text-align: start;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+    font-size: 2em;
+}
+
+h6 {
+    color: #060303;
+    font-size: 1em;
+}
+
+.weatherIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.weatherIcon img {
+    width: 100px;
+    height: 100px;
+}
+
+.weatherIcon h1 {
+    color: rgb(26, 52, 88);
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.more {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.more h3 {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.more h4 {
+    color: #000000;
+    font-size: 1em;
+}
+
+
+.navbarContainer {
+    margin: 20px;
+}
+
+.inputBox{
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: white;
+}
+.inputBox:focus{
+    outline: none;
+}
+.inputBox:hover{
+    border: 1px solid rgb(43, 14, 70);
+}
+
